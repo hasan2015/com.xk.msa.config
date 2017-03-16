@@ -4,5 +4,8 @@ spring:
       server:
         native:
           search-locations: classpath:/conf
+#        git:
+#          uri: https://github.com/spring-cloud-samples/config-repo
+#          searchPaths: classpath:/conf
 server:
-  port: 8888
+  port: 2002 # registry=2001;config=2002;ca=2003;api.port=21**;ui.port=22**

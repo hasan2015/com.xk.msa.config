@@ -1,0 +1,6 @@
+server:
+  address: 127.0.0.1
+crservice:
+  msg: my home!AAA
+  msg2: my school!
+  
