@@ -1,9 +1,15 @@
 com.xk.msa: 
   registry:
     servers: 192.168.118.10:2001
-  caservice:
+  ca:
     server: 127.0.0.1:2003 
-    url:
-      login: /api/xkauth/login
-      refreshtoken: /api/xkauth/token
-  
+  security.jwt:
+    tokenExpirationTime: 15 # Number of minutes
+    refreshTokenExpTime: 60 # Minutes
+    tokenIssuer: http://360ser.com
+    tokenSigningKey: xkhasanxm8EV6Hy5RMFK4EEACIDAwQus
+    tokenFormBasedLoginEntryPoint: /api/xkauth/login
+    tokenHeader: XK-Autho1.0.0
+    tokenBasedAuthEntryPoint: /api/**
+    tokenRefreshAuthEntryPoint: /api/xkauth/token
+    

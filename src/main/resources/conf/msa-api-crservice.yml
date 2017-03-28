@@ -3,4 +3,14 @@ server:
 crservice:
   msg: my home!AAA
   msg2: my school!
+#xk.msa.ca.security.jwt:
+#  tokenExpirationTime: 15 # Number of minutes
+#  refreshTokenExpTime: 60 # Minutes
+#  tokenIssuer: http://360ser.com
+#  tokenSigningKey: xkhasanxm8EV6Hy5RMFK4EEACIDAwQus
   
+spring.datasource: 
+  url: jdbc:jtds:sqlserver://sp502876b549535.sqlserver.rds.aliyuncs.com:3433;DatabaseName=yhxsr
+  username: yhxprivate
+  password: "yhx@Private"
+  driver-class-name: net.sourceforge.jtds.jdbc.Driver
